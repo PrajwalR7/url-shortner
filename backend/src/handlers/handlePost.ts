@@ -19,7 +19,8 @@ export const handlePost = async (req: Request, res: Response) => {
         await Url.init()
         const response = await Url.create({
             fullUrl,
-            shortUrl
+            shortUrl,
+            clicks: 0
         })
         return res.status(200).json({
             shortUrl

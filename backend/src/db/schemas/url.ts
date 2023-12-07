@@ -8,5 +8,6 @@ export const UrlSchema = new Schema({
     shortUrl: {
         type: String,
         required: true
-    }
+    },
+    clicks: Schema.Types.Number
 })
