@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
       "lib": ["ESNext"],
-      "rootDir": "src",
+      "rootDir": ".",
       "outDir": "build",
       "noImplicitAny": true,
       "module": "Node16",
@@ -9,6 +9,8 @@
       "resolveJsonModule": true,
       "sourceMap": true,
       "pretty": true,
-      "moduleResolution":"Node16"
-  }
+      "moduleResolution":"Node16",
+      "allowJs": true
+  },
+  "exclude": ["test.js"]
 }
